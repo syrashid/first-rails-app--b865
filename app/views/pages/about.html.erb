@@ -1,0 +1,17 @@
+<h1>Our kick ass about page 🐥</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, suscipit.</p>
+
+<form action="/about" method="get">
+
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<h3>Our team members</h3>
+
+<h2>Meet our team</h2>
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
